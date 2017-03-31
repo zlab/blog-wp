@@ -1,0 +1,201 @@
+@Author: "zhanqi";
+@Date: "2012-11-11";
+@CHARSET: "UTF-8";
+@base-url: "http://zhanqi.net/blog/theme/aliyun/";
+
+*{ margin:0;padding:0;}
+body{ font:12px/18px "Microsoft Yahei", Helvetica, Arial, Verdana, sans-serif; color:#666666; word-wrap:break-word;}
+table{ border-collapse:collapse;}
+span{ vertical-align:baseline;}
+ol, ul{list-style:none;}
+h1,h2,h3,h4,h5,h6{ font-size:14px; font-weight:bold;}
+dt{ font-weight:bold;}
+em{ font-style:normal;}
+a{ color:#0066cc; text-decoration:none;}
+a:hover{ text-decoration:underline;}
+img{ border:none;}
+a:focus,
+a:focus img,
+textarea:focus,input:focus{ outline:none;}
+
+.gray {
+	color : #999;
+}
+
+.v-align {
+	//vertical-align: middle;
+	//*vertical-align: baseline;
+	//*zoom: 1;
+}
+
+.topbar {
+	clear: both;
+	height: 29px;
+	border-bottom: 1px solid #E9E9E9;
+	background: #FAFAFA;
+	text-align: center;
+	
+	.topbar-inner {
+		width: 940px;
+		margin: 0 auto;
+		text-align: right;
+		padding-top: 5px;
+		vertical-align: middle;
+	}
+	
+	a {
+		color: #0066cc;
+//		color : #999;
+		text-decoration: none;
+		
+		.v-align;
+		
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+	
+	span {
+		.v-align;
+	}
+	
+	i {
+		display: inline-block;
+//		*display: inline;
+//		*zoom: 1;
+		font-size: 0;
+		overflow: hidden;
+		line-height: 0;
+		width: 1px;
+		height: 12px;
+		background: #CCC;
+		margin: 0 15px;
+		vertical-align: middle;
+	}
+}
+
+.header {
+	width: 940px;
+	margin: 0 auto;
+	padding: 10px 10px;
+	
+	.logo {
+		width:325px; 
+		float:left; 
+		height:60px; 
+		background:url("images/logo.gif") left center no-repeat; 
+	}
+}
+
+.nav-main {
+	 height:44px; 
+	 clear:both; 
+	 background:url("images/sprite.png") 0 0 repeat-x;
+	 _background-image:url("images/sprite.gif");
+
+	.nav-inner {
+		margin:0 auto; 
+		width:940px; 
+//		*zoom:1;
+		
+		&::after {
+			clear:both;
+			content:".";
+			display:block;
+			height:0;
+			visibility:hidden; 
+			overflow:hidden;
+		}
+		
+		ul { 
+			margin:0; 
+			float:left;
+			
+			li {
+				display:block; float:left; z-index:10; margin-left:-1px; position:relative;
+				
+				a {
+					display:block; font-size:14px; text-shadow:1px 1px 1px rgba(0,0,0,0.3); color:#FFF; font-weight:600; text-decoration:none; outline:none;
+					
+					&:hover {text-decoration:none;}
+					
+					em {padding:12px 32px; height:18px;}
+				}
+				
+				&.separator {width:1px; height:14px; margin-top:15px; padding:0; overflow:hidden; font-size:0; line-height:0; background:#FFCE80; z-index:1; position:relative; margin:15px 0 0 -1px;}
+			
+				&:hover, &.hover, &.current {
+					position:relative; z-index:2px;
+					
+					a {padding-left:5px; background-position:left -44px; background-repeat:no-repeat; color:#F60; text-shadow:none;
+						span {padding-right:5px; background-position:right -44px; background-repeat:no-repeat;
+							em {background-position:0 -88px; background-repeat:repeat-x; height:17px; padding:14px 27px 12px 27px;}
+						}
+					}
+					
+					.subnav {display:block;}
+				}
+				
+				.subnav {display:none; position:absolute; top:42px; left:1px; padding:0 15px 3px 15px; text-align:left; width:200px; background:#FFF; border:#F87B00 solid; border-width:0 1px 1px 1px;
+					.submenu {
+						clear:both; padding:10px 0; border-bottom:1px dotted #E5E5E5;
+						
+						&.last {border-bottom:none;}
+						a {display:inline!important; float:none!important; font-size:12px!important; line-height:18px!important; color:#06C!important; font-weight:normal!important; text-shadow:none!important; background:none!important; padding-left:0!important; padding:0!important;
+//							vertical-align:middle; *zoom:1;
+							&:hover {text-decoration:underline!important;}
+						}
+					}
+					
+				}
+			}
+			
+			li a,li a span,li a em { 
+				font-style:normal; 
+				display:block; 
+				float:left; 
+				cursor:pointer; 
+				background-image:url("images/sprite.png"); 
+				_background-image:url("images/sprite.gif"); 
+				background-position: -99999px -99999px; 
+				background-repeat:no-repeat;
+			}
+		}
+	}
+}
+
+.container {
+	margin: 0 auto;
+	margin-top: 20px;
+	width: 940px;
+	text-align: left;
+	
+	.content {margin-top: 15px;width: 700px; float: left;
+		.section {
+			position: relative;
+			clear: both;
+			background: #FAFAFA;
+			padding: 25px 30px 17px 30px;
+			border-style: solid;
+			border-width: 2px 1px 1px 1px;
+			
+			border-color: #93A3BD #E8E8E8 #E8E8E8 #E8E8E8;
+			height: 304px;
+			
+			&::after {
+				clear: both;
+				content: ".";
+				display: block;
+				height: 0;
+				visibility: hidden;
+				overflow: hidden;
+			}
+		}
+	}
+	
+	.sidebar {}
+}
+
+.footer {
+	clear:both;
+}

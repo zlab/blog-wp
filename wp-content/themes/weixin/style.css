@@ -1,0 +1,631 @@
+/*
+Theme Name: WeiXin
+Theme URI: http://zhanqi.net
+Author: zhanqi
+Author URI: http://zhanqi.net
+Description: typecho.org Theme Style
+Version: 1.0
+License: GNU General Public License
+License URI: license.txt
+Tags: white, gray, two-columns, right-sidebar, fixed-width
+*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font: 14px/24px Helvitica, Verdana, "微软雅黑", Arial, san-serif;
+    background: #ebedf0 url(images/bg.png) repeat-x 0 -33px;
+}
+
+body {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.clear {
+    zoom: 1;
+}
+
+.clear:after {
+    content: '';
+    display: block;
+    clear: both;
+    visibility: hidden;
+    height: 0;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+#footer {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -khtml-user-select: none;
+}
+
+blockquote {
+    background: #F9F9F9;
+    border-left: 5px solid #CCC;
+    padding: 15px;
+    margin-bottom: 15px;
+    font-family: Consolas, Helvitica, Verdana, "微软雅黑", Arial, san-serif
+}
+
+h1,h2,h3,h4 {
+    font-family: Helvitica, Verdana, Arial, san-serif;
+}
+
+h4 {
+    font-weight:normal;
+    margin: 15px 0 15px;
+    color: #999;
+    font-size: 20px;
+}
+
+.single-post h4 {
+     color: #636B89;
+    font-weight:bold;
+}
+
+img {
+    border: none;
+}
+
+a {
+    text-decoration: none;
+    color: #636b89;
+}
+
+a:hover,a:active {
+    text-decoration: underline;
+}
+
+input,textarea,a {
+    outline: none;
+}
+
+#submit,#searchsubmit {
+    height: 28px;
+    line-height: 28px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    width: 86px;
+    background: url(images/btn_bg.png) repeat-x #5388DC;
+    text-align: center;
+    cursor: pointer;
+    -moz-border-radius: 3px;
+    -khtml-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+
+#header {
+    height: 80px;
+    margin-bottom: 40px;
+}
+
+#header .title {
+    float: left;
+    margin: 20px 0 0 25px;
+    font-size: 24px;
+}
+
+#header .title a {
+    color: #558393;
+}
+
+#header .title a:hover {
+    color: #C60;
+    text-decoration: none;
+}
+
+#header .navigator {
+    float: right;
+    margin: 0 20px 0;
+}
+
+#header .navigator li {
+    height: 80px;
+    float: left;
+    list-style-type: none;
+}
+
+#header .navigator a {
+    color: #CCC;
+    line-height: 80px;
+    font-size: 17px;
+    padding: 30px 15px;
+}
+
+#header .navigator a:hover {
+    background-color: #1F2531;
+    text-decoration: none;
+}
+
+#main {
+    border: 1px solid #C7CDD6;
+    border-radius: 8px;
+    box-shadow: 0px 1px 3px #CCC;
+    background: #F5F6F7;
+}
+
+.single #main {
+    width: 880px;
+    margin: 0 auto;
+}
+
+.breadcrumb {
+    border-bottom: 1px solid #D7DDE6;
+    padding: 20px 40px;
+}
+
+.breadcrumb h2 {
+    font-size: 24px;
+    font-weight: normal;
+    text-shadow: 0 1px 1px white;
+}
+
+.breadcrumb h2 span {
+    color: #c60;
+}
+
+#content {
+    background: white;
+    padding: 20px 30px;
+    border-radius: 0 0 10px 10px;
+}
+
+#content .post-list {
+    list-style: none;
+}
+
+/*-------------------
+* post
+* --------------------*/
+.post {
+    padding: 0 0 20px 0;
+    margin: 0 0 20px 0;
+    border-bottom: 1px solid #eee;
+    overflow: hidden;
+}
+
+.post img {
+    max-width: 820px;
+}
+
+.single .post,.page .post {
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+.post .thumbnail {
+    float: right;
+}
+
+.post .thumbnail {
+    width: 330px;
+}
+
+.post .thumbnail img {
+    max-width: 330px;
+    max-height: 350px;
+    display: block;
+    margin: 0 auto;
+}
+
+.post .post-content {
+    margin-right: 350px;
+}
+
+.single .post .post-content,.page .post .post-content {
+    margin-right: inherit;
+}
+
+.post p {
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.post blockquote p {
+    margin: 0;
+}
+
+.post .post-content a,.page .post-content a {
+    text-decoration: underline;
+}
+
+.post .post-content a.more-link {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.post .post-content a.more-link:hover {
+    text-decoration: underline;
+}
+
+.post-title {
+    color: #c60;
+}
+
+.post h3.post-title {
+    margin-bottom: 13px;
+    font-size: 20px;
+}
+
+.post .post-meta {
+    color: #999;
+    margin-bottom: 1.2em;
+}
+
+.post .post-meta span {
+    margin-right: 5px;
+    padding-right: 8px;
+    border-right: 1px solid #ddd;
+}
+
+.post .post-meta span.no-border {
+    border-color: transparent;
+}
+
+.post .post-meta-bottom {
+    margin-bottom: 1em;
+}
+
+.post .post-meta-bottom a {
+    margin: 0 10px 0px 0;
+}
+
+h4.subtitle2 {
+    color: #C60;
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+
+.faq dt {
+    font-size: 16px;
+    line-height: 1.6em;
+    margin-bottom: 5px;
+}
+
+.bookmarks h2 {
+    color: #aaa;
+    font-size: 22px;
+    margin-bottom: 15px;
+    font-weight: normal;
+}
+
+.bookmarks .linkcat {
+    clear: both;
+    padding: 1.2em 0 0;
+}
+
+.bookmarks .linkcat li {
+    float: left;
+    margin-right: 15px;
+}
+
+/* ----------------
+ * comments
+ * ------------- */
+#comments {
+    margin-top: 20px;
+}
+
+#comments .children {
+    padding: 10px 0px 0px 47px;
+}
+
+#comments #respond {
+    margin-top: 15px;
+}
+
+#comments .comment #respond {
+    margin-left: 63px;
+    margin-top: 0;
+}
+
+#comments #reply-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#comments li {
+    list-style: none;
+    padding: 15px;
+    padding-right: 0;
+}
+
+#comments li.even {
+    background: #fff;
+}
+
+#comments li.odd {
+    background: #f3f3f3;
+}
+
+#comments .comment-meta {
+    float: right;
+    margin-top: -25px;
+    margin-right: 5px;
+}
+
+#comments .comment-notes {
+    color: #AAA;
+}
+
+#comments .reply {
+    height: 16px;
+    line-height: normal;
+    text-align: right;
+    margin-right: 5px;
+    line-height: normal;
+}
+
+#comments cite.fn {
+    font-style: normal;
+}
+
+#comments img.avatar {
+    float: left;
+    width: 48px;
+    height: 48px;
+    margin: 3px 15px 15px 0;
+    background: #ccc;
+}
+
+#comments .says,#comments .form-allowed-tags {
+    display: none;
+}
+
+.comment-form-author,.comment-form-email,.comment-form-url,.comment-form-comment
+    {
+    position: relative;
+    margin: 10px 0;
+}
+
+#commentform p label {
+    position: absolute;
+    left: 7px;
+    top: 3px;
+    color: #987;
+}
+
+.comment-body>p {
+    margin-left: 63px;
+}
+
+#commentform p .required {
+    position: absolute;
+    left: 248px;
+    top: 3px;
+    color: red;
+}
+
+#commentform p.comment-notes .required {
+    position: static;
+    margin: 0;
+}
+
+#author,#email,#url,#s {
+    width: 230px;
+    padding: 4px;
+    color: #555;
+    font-size: 14px;
+    font-weight: lighter;
+    margin-bottom: 10px;
+    height: 20px;
+    border: 1px solid #BFBFBF;
+}
+
+textarea#comment {
+    width: 480px;
+    height: 120px;
+    overflow: auto;
+    padding: 5px;
+    max-width: 670px;
+    max-height: 200px;
+    border: 1px solid #BFBFBF;
+}
+
+#author:focus,#email:focus,#url:focus,#comment:focus,#s:focus {
+    -moz-box-shadow: 0 0 8px rgba(82, 168, 236, 0.5);
+    -webkit-box-shadow: 0 0 8px rgba(82, 168, 236, 0.5);
+    box-shadow: 0 0 8px rgba(82, 168, 236, 0.5);
+    border-color: rgba(82, 168, 236, 0.75);
+}
+
+#comments .comment-mail-notify {
+    margin: -25px 0 0 115px;
+}
+
+#comments #comment-mail-notify {
+    position: relative;
+    top: 1px;
+    right: 3px;
+}
+
+/* ----------------
+ * footer
+ * ------------- */
+#footer {
+    padding: 20px 0;
+    margin: 30px 0 0px;
+    color: #555;
+    background: url(images/line.png) no-repeat top center;
+    text-align: center;
+    color: #999;
+    font-size: 12px;
+    text-shadow: 0px 1px 1px white;
+}
+
+/* ----------------
+ * pagenavi
+ * ------------- */
+.wp-pagenavi {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.wp-pagenavi .pages {
+    margin-right: 7px;
+}
+
+.wp-pagenavi a,.wp-pagenavi .current {
+    color: #006A92;
+    padding: 5px 8px;
+    margin: 0 3px;
+    text-align: center;
+}
+
+.wp-pagenavi a:hover {
+    text-decoration: none;
+    color: white;
+    border-color: #3090BC;
+    background: #73B2DA;
+}
+
+.wp-pagenavi .current {
+    font-weight: bold;
+    color: #333;
+    background: none;
+    border: 0;
+}
+
+/* ----------------
+ * nav-single
+ * ------------- */
+.nav-single {
+    border-bottom: 1px solid #EEE;
+    padding: 10px 0;
+}
+
+.nav-single .previous-post-link {
+    float: left;
+}
+
+.nav-single .next-post-link {
+    float: right;
+}
+
+/* --------------------
+ * archive
+ * ------------------ */
+div.archive {
+    background-color: #ffc;
+    border: 1px solid #cc9;
+    padding: 8px 12px 7px;
+    line-height: normal;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+}
+
+div.archive b {
+    color: #C60;
+}
+
+.syntaxhighlighter2 {
+    max-width: 600px !important;
+}
+
+/************************/
+.syntaxhighlighter .toolbar {
+    background-color: transparent !important;
+    border: none !important;
+}
+
+/* 
+pre {
+    margin: 1.5em 0;
+    white-space: pre;
+}
+
+pre,code,tt {
+    font: 1em 'andale mono', 'lucida console', monospace;
+    line-height: 1.5;
+}
+
+code,pre {
+    display: block;
+    overflow-x: auto;
+    border: 1px solid #CC9;
+    padding: 10px;
+    line-height: 20px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+} */
+
+/*********/
+.gotop {
+    width: 51px;
+    height: 55px;
+    overflow: hidden;
+    right: 70px;
+    bottom: 40px;
+    z-index: 100;
+    position: fixed;
+    opacity: 1;
+    _position: absolute;
+    display: none;
+}
+
+.gotop a {
+    width: 51px;
+    height: 55px;
+    display: block;
+    background: url(images/gotop.png) 0 0 no-repeat;
+    text-decoration: none;
+}
+
+.gotop a:hover {
+    background-position: 0 -110px;
+}
+
+/****************/
+#searchform {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#searchform .screen-reader-text {
+    color: #555;
+}
+
+#searchsubmit {
+    margin-left: 15px;
+}
+
+.search li {
+    list-style: none;
+}
+
+.list-cats2 {
+    width: 200px;
+}
+
+.rand-posts {
+    display: none;
+}
+
+.color-tags a,.rand-posts a {
+    float: left;
+    width: 110px;
+    text-align: center;
+}
+
+.rand-posts a {
+    width: 400px;
+    text-align: left;
+}

@@ -1,0 +1,15 @@
+body {
+    font-family: "Microsoft YaHei";
+}
+
+.home {
+    padding-top: 75px;
+}
+
+.post-title {
+    font-size: 20px;
+}
+
+#searchKey {
+    border-radius: 5px;
+}
